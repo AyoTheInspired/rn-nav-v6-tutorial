@@ -1,19 +1,12 @@
-import React from 'react';
-import {StyleSheet, Text, SafeAreaView} from 'react-native';
+import * as React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {SafeAreaView, Text} from 'react-native';
+import AuthNavigator from './src/navigations/AuthNavigator';
 
-const App = () => {
+export default function App() {
   return (
-    <SafeAreaView
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-      <Text>App</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <AuthNavigator />
+    </NavigationContainer>
   );
-};
-
-export default App;
-
-const styles = StyleSheet.create({});
+}
