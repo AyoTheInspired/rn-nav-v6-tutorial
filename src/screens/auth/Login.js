@@ -32,7 +32,10 @@ const Login = ({navigation}) => {
               start={{y: 0.0, x: 0.0}}
               end={{y: 1.0, x: 0.0}}>
               {/******************** LOGIN BUTTON *********************/}
-              <TouchableOpacity activeOpacity={0.7} style={styles.loginBtn}>
+              <TouchableOpacity
+                onPress={() => navigation.navigate(ROUTES.HOME)}
+                activeOpacity={0.7}
+                style={styles.loginBtn}>
                 <Text style={styles.loginText}>Log In</Text>
               </TouchableOpacity>
             </LinearGradient>
