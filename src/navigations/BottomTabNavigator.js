@@ -1,6 +1,6 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Home, Notifications, Settings, Wallet} from '../screens';
+import {Home, Notifications, Wallet} from '../screens';
 import {COLORS, ROUTES} from '../constants';
 import Icon from 'react-native-vector-icons/Ionicons';
 import SettingsNavigator from './SettingsNavigator';
@@ -65,6 +65,7 @@ export default function BottomTabNavigator() {
         }}
         name={ROUTES.SETTINGS_NAVIGATOR}
         component={SettingsNavigator}
+        route="settings"
       />
     </Tab.Navigator>
   );
